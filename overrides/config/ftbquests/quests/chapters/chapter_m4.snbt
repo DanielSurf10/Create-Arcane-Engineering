@@ -3,14 +3,14 @@
 	group: "42A213AA17D37DAF"
 	order_index: 8
 	filename: "chapter_m4"
-	title: "Chapter MIV: Enigmatic Enlightenment"
+	title: "{ftbquests.chapter.chapter_m4.title}"
 	icon: {
 		id: "forbidden_arcanus:eternal_stella"
 		Count: 1b
 		tag: { }
 	}
 	default_quest_shape: ""
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: "false"
 	images: [
 		{
 			x: 1.0d
@@ -21,8 +21,8 @@
 			image: "kubejs:textures/m4.png"
 			hover: [ ]
 			click: ""
-			dev: false
-			corner: false
+			dev: "false"
+			corner: "false"
 		}
 		{
 			x: 1.0d
@@ -33,8 +33,8 @@
 			image: "kubejs:textures/wowarcane.png"
 			hover: [ ]
 			click: ""
-			dev: false
-			corner: false
+			dev: "false"
+			corner: "false"
 		}
 	]
 	quests: [
@@ -45,15 +45,17 @@
 			dependencies: ["00C03F43368B7053"]
 			size: 1.3d
 			id: "43B996DFEAF1948A"
-			tasks: [{
-				id: "1DE103B128306FB9"
-				type: "item"
-				item: {
-					id: "forbidden_arcanus:eternal_stella"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "1DE103B128306FB9"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:eternal_stella"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+			]
 			rewards: [
 				{
 					id: "56A18D7854B83964"
@@ -83,15 +85,17 @@
 			x: 2.5d
 			y: 1.5d
 			shape: "diamond"
-			subtitle: "Process an Experience Nugget under a press 10 times to produce an Xpetrified Orbs"
+			subtitle: "{ftbquests.chapter.chapter_m4.quests1.subtitle}"
 			dependencies: ["2C7C88F0236ECBE8"]
-			hide: false
+			hide: "false"
 			id: "28FC493A45BD131F"
-			tasks: [{
-				id: "73DC79C8863EC8D9"
-				type: "item"
-				item: "forbidden_arcanus:xpetrified_orb"
-			}]
+			tasks: [
+				{
+					id: "73DC79C8863EC8D9"
+					type: "item"
+					item: "forbidden_arcanus:xpetrified_orb"
+				}
+			]
 			rewards: [
 				{
 					id: "4D8B6294F45B7377"
@@ -115,22 +119,24 @@
 		{
 			x: 4.5d
 			y: 1.5d
-			subtitle: "Crushing Silverfish will grant Experience Nuggets."
+			subtitle: "{ftbquests.chapter.chapter_m4.quests2.subtitle}"
 			dependencies: ["4FD232051F96C24C"]
 			id: "2C7C88F0236ECBE8"
-			tasks: [{
-				id: "67695868420C52BF"
-				type: "item"
-				item: "create:experience_nugget"
-			}]
+			tasks: [
+				{
+					id: "67695868420C52BF"
+					type: "item"
+					item: "create:experience_nugget"
+				}
+			]
 		}
 		{
-			title: "Silverfish"
+			title: "{ftbquests.chapter.chapter_m4.quests3.title}"
 			x: 5.5d
 			y: -0.5d
-			subtitle: "If you hurt a Silverfish and a infested Stone block is near, the infested stone block will turn into a silverfish"
+			subtitle: "{ftbquests.chapter.chapter_m4.quests3.subtitle}"
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "641BC3313321273D"
 			tasks: [
 				{
@@ -154,11 +160,13 @@
 			shape: "diamond"
 			dependencies: ["65C7E03ECF451083"]
 			id: "5AAAB21891EA2755"
-			tasks: [{
-				id: "7BA832AEA7BCE080"
-				type: "item"
-				item: "minecraft:netherite_ingot"
-			}]
+			tasks: [
+				{
+					id: "7BA832AEA7BCE080"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+				}
+			]
 			rewards: [
 				{
 					id: "4D7A73F26F2BF095"
@@ -180,11 +188,11 @@
 			]
 		}
 		{
-			title: "Look at the Source-Time Crystal."
+			title: "{ftbquests.chapter.chapter_m4.quests5.title}"
 			x: 1.0d
 			y: -1.5d
-			subtitle: "Drop Time Crystals into Source to Create Source-Time Crystals. Click this quest for a guide."
-			description: ["The SourceTimeCrystal (STC) will convert to ancient debris, provided you process it correctly. Heres how to: The STC has a pool of 10 possible spells it can be hit with. And it randomly selects 5 upon creation. Now, everytime a spell passes by the sourcetime Crystal, it checkks if the spell contains one of the 5 chosen spells, if it does. Then the sourcetime crystal checks of that spell from its list and searches for the other spells. Once you fire all spells onto it either by randomly guessing the spells, or nbt reading(hasnt been implemented yet) so in simple terms, fire 10 spells at it and itll convert to ancient debris"]
+			subtitle: "{ftbquests.chapter.chapter_m4.quests5.subtitle}"
+			description: ["{ftbquests.chapter.chapter_m4.quests5.description}"]
 			dependencies: [
 				"089DD6C64F12E754"
 				"29202035B6E8F1EC"
@@ -199,52 +207,60 @@
 				"71384DD64BC880DE"
 			]
 			id: "707DF250A92F24B7"
-			tasks: [{
-				id: "4A10DC6C64234848"
-				type: "observation"
-				title: "Look at the Source-Time Crystal"
-				icon: "kubejs:source_time_crystal"
-				timer: 0L
-				observe_type: 0
-				to_observe: "cae:source_time_crystal"
-			}]
-			rewards: [{
-				id: "7F1B3718CC2EDDDD"
-				type: "item"
-				item: {
-					id: "kubejs:lootbag_create_brass"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "4A10DC6C64234848"
+					type: "observation"
+					title: "{ftbquests.chapter.chapter_m4.quests5.tasks0.title}"
+					icon: "kubejs:source_time_crystal"
+					timer: 0L
+					observe_type: 0
+					to_observe: "cae:source_time_crystal"
+				}
+			]
+			rewards: [
+				{
+					id: "7F1B3718CC2EDDDD"
+					type: "item"
+					item: {
+						id: "kubejs:lootbag_create_brass"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: -1.0d
 			y: -6.0d
-			subtitle: "Each time you kill the golem you will gain Amethyst dust"
+			subtitle: "{ftbquests.chapter.chapter_m4.quests6.subtitle}"
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "27B2E5E119C5F23B"
-			tasks: [{
-				id: "0550AAB3C09C11F9"
-				type: "item"
-				item: "ars_nouveau:amethyst_golem_charm"
-			}]
+			tasks: [
+				{
+					id: "0550AAB3C09C11F9"
+					type: "item"
+					item: "ars_nouveau:amethyst_golem_charm"
+				}
+			]
 		}
 		{
 			x: -0.5d
 			y: 1.5d
 			shape: "diamond"
-			subtitle: "Yeet Nether Stars above the Build limit to create stellarite"
+			subtitle: "{ftbquests.chapter.chapter_m4.quests7.subtitle}"
 			dependencies: ["7010165D31CB43FD"]
 			id: "3882C0D9CAA0BE84"
-			tasks: [{
-				id: "36DD50161963A375"
-				type: "item"
-				item: "forbidden_arcanus:stellarite_piece"
-			}]
+			tasks: [
+				{
+					id: "36DD50161963A375"
+					type: "item"
+					item: "forbidden_arcanus:stellarite_piece"
+				}
+			]
 			rewards: [
 				{
 					id: "6C414C96315DC8D0"
@@ -268,7 +284,7 @@
 		{
 			x: -1.5d
 			y: 1.5d
-			subtitle: "Yes, automated Wither killing. Hardened Glass is wither-resistant, making a good cage for the boss."
+			subtitle: "{ftbquests.chapter.chapter_m4.quests8.subtitle}"
 			dependencies: [
 				"4F2C8B0FFE0646C4"
 				"76FF8A53B02CF2E0"
@@ -283,7 +299,7 @@
 				{
 					id: "413B632E02951B83"
 					type: "item"
-					title: "Any #thermal:glass/hardened"
+					title: "{ftbquests.chapter.chapter_m4.quests8.tasks1.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -317,55 +333,61 @@
 		{
 			x: -2.5d
 			y: 2.0d
-			subtitle: "Immolating a Skeleton in soul fire and placing it inside of a wither rose will convert it to a boosted Wither Skeleton that drops extra wither skulls"
+			subtitle: "{ftbquests.chapter.chapter_m4.quests9.subtitle}"
 			dependencies: [
 				"7F7E6735DDC3712F"
 				"6988B2238F02E9EB"
 			]
 			id: "4F2C8B0FFE0646C4"
-			tasks: [{
-				id: "4162591AD61348EB"
-				type: "item"
-				item: "minecraft:wither_skeleton_skull"
-			}]
+			tasks: [
+				{
+					id: "4162591AD61348EB"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+				}
+			]
 		}
 		{
 			x: -2.5d
 			y: 0.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "76FF8A53B02CF2E0"
-			tasks: [{
-				id: "41447EE7CD24E1AC"
-				type: "item"
-				item: "minecraft:soul_sand"
-			}]
+			tasks: [
+				{
+					id: "41447EE7CD24E1AC"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+			]
 		}
 		{
 			x: -3.0d
 			y: 3.0d
-			subtitle: "The Arcane Transformation"
+			subtitle: "{ftbquests.chapter.chapter_m4.quests11.subtitle}"
 			dependencies: [
 				"62D9AAC8D4355173"
 				"562C3A36FCCAA7EA"
 			]
 			id: "6988B2238F02E9EB"
-			tasks: [{
-				id: "292C881A98EA45A6"
-				type: "item"
-				item: "minecraft:wither_rose"
-			}]
+			tasks: [
+				{
+					id: "292C881A98EA45A6"
+					type: "item"
+					item: "minecraft:wither_rose"
+				}
+			]
 		}
 		{
 			x: 1.0d
 			y: 1.5d
 			shape: "gear"
 			description: [
-				"Automating the Hephaestus Forge is a bit difficult."
+				"{ftbquests.chapter.chapter_m4.quests12.description0}"
 				""
-				"4 of its slots, 3 of which are inaccessible without hoppers/funnels, take priority over the actually important ones."
+				"{ftbquests.chapter.chapter_m4.quests12.description2}"
 				""
-				"To automate inputting into the forge, simply fill those slots with any unstackable item first."
+				"{ftbquests.chapter.chapter_m4.quests12.description4}"
 			]
 			dependencies: [
 				"28FC493A45BD131F"
@@ -373,218 +395,254 @@
 				"5AAAB21891EA2755"
 			]
 			id: "00C03F43368B7053"
-			tasks: [{
-				id: "59F30D2A3DBB9EBA"
-				type: "item"
-				item: "forbidden_arcanus:hephaestus_forge"
-			}]
+			tasks: [
+				{
+					id: "59F30D2A3DBB9EBA"
+					type: "item"
+					item: "forbidden_arcanus:hephaestus_forge"
+				}
+			]
 		}
 		{
-			title: "Synthesizing Skeletons from Thin Air"
+			title: "{ftbquests.chapter.chapter_m4.quests13.title}"
 			x: -2.0d
 			y: 3.5d
-			subtitle: "Spawn an Amplified Skeleton by rightclicking a DavesBE skeleton with a Soul. ALL of the Amplified Skeletons will have a custom lootable that can sustain the block cycle"
+			subtitle: "{ftbquests.chapter.chapter_m4.quests13.subtitle}"
 			dependencies: [
 				"1D13EA7170FD3C81"
 				"68F10C80D3E640D7"
 			]
 			id: "7F7E6735DDC3712F"
-			tasks: [{
-				id: "499AF3EC17DBE82F"
-				type: "item"
-				item: "minecraft:skeleton_skull"
-			}]
-			rewards: [{
-				id: "391C3FF0A3E1D624"
-				type: "item"
-				item: "davebuildingmod:skeleton_2"
-				count: 4
-			}]
+			tasks: [
+				{
+					id: "499AF3EC17DBE82F"
+					type: "item"
+					item: "minecraft:skeleton_skull"
+				}
+			]
+			rewards: [
+				{
+					id: "391C3FF0A3E1D624"
+					type: "item"
+					item: "davebuildingmod:skeleton_2"
+					count: 4
+				}
+			]
 		}
 		{
 			x: -2.0d
 			y: -1.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "3A6A9739A9E26FF5"
-			tasks: [{
-				id: "4CD481A2C55DB997"
-				type: "item"
-				item: "ars_nouveau:glyph_gravity"
-			}]
+			tasks: [
+				{
+					id: "4CD481A2C55DB997"
+					type: "item"
+					item: "ars_nouveau:glyph_gravity"
+				}
+			]
 		}
 		{
 			x: -1.0d
 			y: -2.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "3B268C508D1A8E3A"
-			tasks: [{
-				id: "72B17D56F5537DE8"
-				type: "item"
-				item: "ars_nouveau:glyph_ignite"
-			}]
+			tasks: [
+				{
+					id: "72B17D56F5537DE8"
+					type: "item"
+					item: "ars_nouveau:glyph_ignite"
+				}
+			]
 		}
 		{
 			x: 2.0d
 			y: -2.0d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "6EBFF16CA4642166"
-			tasks: [{
-				id: "372998B3A22D11A4"
-				type: "item"
-				item: "ars_nouveau:glyph_intangible"
-			}]
+			tasks: [
+				{
+					id: "372998B3A22D11A4"
+					type: "item"
+					item: "ars_nouveau:glyph_intangible"
+				}
+			]
 		}
 		{
 			x: 0.0d
 			y: -1.0d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "089DD6C64F12E754"
-			tasks: [{
-				id: "48910D835E07A073"
-				type: "item"
-				item: "ars_nouveau:glyph_cold_snap"
-			}]
+			tasks: [
+				{
+					id: "48910D835E07A073"
+					type: "item"
+					item: "ars_nouveau:glyph_cold_snap"
+				}
+			]
 		}
 		{
 			x: 3.0d
 			y: -2.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "6E12EEAFC2CDFE97"
-			tasks: [{
-				id: "5E6EA0BEBE296674"
-				type: "item"
-				item: "ars_nouveau:glyph_crush"
-			}]
+			tasks: [
+				{
+					id: "5E6EA0BEBE296674"
+					type: "item"
+					item: "ars_nouveau:glyph_crush"
+				}
+			]
 		}
 		{
 			x: 4.0d
 			y: -1.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "79435910657C92F4"
-			tasks: [{
-				id: "24543DC722ECCA0D"
-				type: "item"
-				item: "ars_nouveau:glyph_freeze"
-			}]
+			tasks: [
+				{
+					id: "24543DC722ECCA0D"
+					type: "item"
+					item: "ars_nouveau:glyph_freeze"
+				}
+			]
 		}
 		{
 			x: 2.0d
 			y: -1.0d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "0FD64B8A181D9120"
-			tasks: [{
-				id: "23D0BB0EC574D299"
-				type: "item"
-				item: "ars_nouveau:glyph_grow"
-			}]
+			tasks: [
+				{
+					id: "23D0BB0EC574D299"
+					type: "item"
+					item: "ars_nouveau:glyph_grow"
+				}
+			]
 		}
 		{
 			x: 3.0d
 			y: -1.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "7E46F7F5BA789182"
-			tasks: [{
-				id: "46782120421565B3"
-				type: "item"
-				item: "ars_nouveau:glyph_firework"
-			}]
+			tasks: [
+				{
+					id: "46782120421565B3"
+					type: "item"
+					item: "ars_nouveau:glyph_firework"
+				}
+			]
 		}
 		{
 			x: 0.0d
 			y: -2.0d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "29202035B6E8F1EC"
-			tasks: [{
-				id: "777A695F62EBF506"
-				type: "item"
-				item: "ars_nouveau:glyph_light"
-			}]
+			tasks: [
+				{
+					id: "777A695F62EBF506"
+					type: "item"
+					item: "ars_nouveau:glyph_light"
+				}
+			]
 		}
 		{
 			tags: ["flowers"]
 			x: -5.0d
 			y: 3.0d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "562C3A36FCCAA7EA"
-			tasks: [{
-				id: "5F5AE422BBD4F5C7"
-				type: "item"
-				title: "Any #minecraft:small_flowers"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "minecraft:small_flowers"
+			tasks: [
+				{
+					id: "5F5AE422BBD4F5C7"
+					type: "item"
+					title: "{ftbquests.chapter.chapter_m4.quests23.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:small_flowers"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: -4.0d
 			y: 2.0d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "62D9AAC8D4355173"
-			tasks: [{
-				id: "3E4084D661F798C8"
-				type: "item"
-				item: "kubejs:liquid_resent_bucket"
-			}]
+			tasks: [
+				{
+					id: "3E4084D661F798C8"
+					type: "item"
+					item: "kubejs:liquid_resent_bucket"
+				}
+			]
 		}
 		{
-			title: "Important Note."
+			title: "{ftbquests.chapter.chapter_m4.quests25.title}"
 			x: 1.0d
 			y: -6.0d
-			subtitle: "This chapter relies on hostile mobs being summoned for a big part. This means by nature that this factory will only work with a player nearby, otherwise the mobs will despawn! "
+			subtitle: "{ftbquests.chapter.chapter_m4.quests25.subtitle}"
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "790F8C1BC091E6F7"
-			tasks: [{
-				id: "473AE3E4698E7DE2"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "489E662CE8AAC4DD"
-				type: "item"
-				item: "pneumaticcraft:spawner_agitator"
-			}]
+			tasks: [
+				{
+					id: "473AE3E4698E7DE2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "489E662CE8AAC4DD"
+					type: "item"
+					item: "pneumaticcraft:spawner_agitator"
+				}
+			]
 		}
 		{
 			x: -1.0d
 			y: -1.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "019D30162ADC2FEC"
-			tasks: [{
-				id: "5733167507C21CB6"
-				type: "item"
-				item: "ars_nouveau:glyph_hex"
-			}]
+			tasks: [
+				{
+					id: "5733167507C21CB6"
+					type: "item"
+					item: "ars_nouveau:glyph_hex"
+				}
+			]
 		}
 		{
 			x: -1.0d
 			y: 4.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "51B16B49FDE64745"
-			tasks: [{
-				id: "01401499E60E01BE"
-				type: "item"
-				item: "minecraft:bone_block"
-			}]
+			tasks: [
+				{
+					id: "01401499E60E01BE"
+					type: "item"
+					item: "minecraft:bone_block"
+				}
+			]
 		}
 		{
-			title: "Any Daves BE Skeleton"
+			title: "{ftbquests.chapter.chapter_m4.quests28.title}"
 			x: -2.0d
 			y: 5.0d
 			dependencies: ["51B16B49FDE64745"]
@@ -626,36 +684,42 @@
 			x: -3.5d
 			y: 4.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "68F10C80D3E640D7"
-			tasks: [{
-				id: "60AA39316FA9D31D"
-				type: "item"
-				item: "forbidden_arcanus:soul"
-			}]
+			tasks: [
+				{
+					id: "60AA39316FA9D31D"
+					type: "item"
+					item: "forbidden_arcanus:soul"
+				}
+			]
 		}
 		{
 			x: 1.0d
 			y: -3.0d
 			dependencies: ["26EFD55243E3D198"]
 			id: "71384DD64BC880DE"
-			tasks: [{
-				id: "7BB11A13B79C8748"
-				type: "item"
-				item: "kubejs:source_bucket"
-			}]
+			tasks: [
+				{
+					id: "7BB11A13B79C8748"
+					type: "item"
+					item: "kubejs:source_bucket"
+				}
+			]
 		}
 		{
 			x: 5.5d
 			y: 0.5d
-			subtitle: "You can crush entities! Crush Silverfish for Experience Gems"
+			subtitle: "{ftbquests.chapter.chapter_m4.quests31.subtitle}"
 			dependencies: ["641BC3313321273D"]
 			id: "4FD232051F96C24C"
-			tasks: [{
-				id: "07AA3BF65DC6061F"
-				type: "item"
-				item: "create:crushing_wheel"
-			}]
+			tasks: [
+				{
+					id: "07AA3BF65DC6061F"
+					type: "item"
+					item: "create:crushing_wheel"
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -665,11 +729,13 @@
 				"5C02EC87CD4EDBAE"
 			]
 			id: "26EFD55243E3D198"
-			tasks: [{
-				id: "07E5B0261CCF4478"
-				type: "item"
-				item: "cae:time_crystal"
-			}]
+			tasks: [
+				{
+					id: "07E5B0261CCF4478"
+					type: "item"
+					item: "cae:time_crystal"
+				}
+			]
 			rewards: [
 				{
 					id: "4F8F1550E1FE3232"
@@ -695,55 +761,65 @@
 			y: -4.5d
 			dependencies: ["28761261E7757DE8"]
 			id: "5C02EC87CD4EDBAE"
-			tasks: [{
-				id: "2CC6A8A695BC15B6"
-				type: "item"
-				item: "minecraft:amethyst_cluster"
-			}]
+			tasks: [
+				{
+					id: "2CC6A8A695BC15B6"
+					type: "item"
+					item: "minecraft:amethyst_cluster"
+				}
+			]
 		}
 		{
 			x: 2.0d
 			y: -4.5d
 			dependencies: ["10F884D73B9DB540"]
-			hide: true
+			hide: "true"
 			id: "67EB56E5BE508BE8"
-			tasks: [{
-				id: "75D102659F061BE6"
-				type: "item"
-				item: {
-					id: "tiab:time_in_a_bottle"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "75D102659F061BE6"
+					type: "item"
+					item: {
+						id: "tiab:time_in_a_bottle"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+			]
 		}
 		{
 			x: -1.0d
 			y: -5.0d
 			dependencies: ["27B2E5E119C5F23B"]
 			id: "28761261E7757DE8"
-			tasks: [{
-				id: "1008EF2B0D3A3469"
-				type: "item"
-				item: "create:crushing_wheel"
-			}]
+			tasks: [
+				{
+					id: "1008EF2B0D3A3469"
+					type: "item"
+					item: "create:crushing_wheel"
+				}
+			]
 		}
 		{
 			x: 1.0d
 			y: -0.5d
 			dependencies: ["707DF250A92F24B7"]
 			id: "65C7E03ECF451083"
-			tasks: [{
-				id: "2371B4F600C6AC0C"
-				type: "item"
-				item: "minecraft:ancient_debris"
-			}]
-			rewards: [{
-				id: "02FBF2A31183E891"
-				type: "item"
-				item: "minecraft:ancient_debris"
-				count: 8
-			}]
+			tasks: [
+				{
+					id: "2371B4F600C6AC0C"
+					type: "item"
+					item: "minecraft:ancient_debris"
+				}
+			]
+			rewards: [
+				{
+					id: "02FBF2A31183E891"
+					type: "item"
+					item: "minecraft:ancient_debris"
+					count: 8
+				}
+			]
 		}
 	]
 	quest_links: [ ]
