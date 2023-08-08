@@ -3,9 +3,9 @@
 	group: ""
 	order_index: 1
 	filename: "tips"
-	title: "{tips.title}"
+	title: "{ftbquests.chapter.tips.title}"
 	default_quest_shape: ""
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: "false"
 	images: [
 		{
 			x: 2.0d
@@ -16,8 +16,8 @@
 			image: "kubejs:textures/tips.png"
 			hover: [ ]
 			click: ""
-			dev: false
-			corner: false
+			dev: "false"
+			corner: "false"
 		}
 		{
 			x: -6.0d
@@ -28,8 +28,8 @@
 			image: "davebuildingmod:textures/blocks/arrow_right_sign.png"
 			hover: [ ]
 			click: ""
-			dev: false
-			corner: false
+			dev: "false"
+			corner: "false"
 		}
 		{
 			x: 11.5d
@@ -40,8 +40,8 @@
 			image: "davebuildingmod:textures/blocks/arrow_left_sign.png"
 			hover: [ ]
 			click: ""
-			dev: false
-			corner: false
+			dev: "false"
+			corner: "false"
 		}
 		{
 			x: -6.0d
@@ -52,51 +52,57 @@
 			image: "davebuildingmod:textures/blocks/arrow_down_sign.png"
 			hover: [ ]
 			click: ""
-			dev: false
-			corner: false
+			dev: "false"
+			corner: "false"
 		}
 	]
 	quests: [
 		{
 			x: -5.5d
 			y: -12.0d
-			subtitle: "{tips.quest.1.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests0.subtitle}"
 			id: "2DF25740BF8AF0F2"
-			tasks: [{
-				id: "7BB8B3A8548C9213"
-				type: "item"
-				item: "create:track"
-			}]
+			tasks: [
+				{
+					id: "7BB8B3A8548C9213"
+					type: "item"
+					item: "create:track"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.2.title}"
+			title: "{ftbquests.chapter.tips.quests1.title}"
 			x: -6.5d
 			y: -11.0d
-			subtitle: "{tips.quest.2.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests1.subtitle}"
 			id: "14FC19629B01ACFF"
-			tasks: [{
-				id: "26D4C20DB80ADEFD"
-				type: "item"
-				item: "minecraft:iron_block"
-			}]
+			tasks: [
+				{
+					id: "26D4C20DB80ADEFD"
+					type: "item"
+					item: "minecraft:iron_block"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.3.title}"
+			title: "{ftbquests.chapter.tips.quests2.title}"
 			x: -6.0d
 			y: -10.0d
-			subtitle: "{tips.quest.3.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests2.subtitle}"
 			id: "51054C4D158084AD"
-			tasks: [{
-				id: "27EA85318341928B"
-				type: "item"
-				item: "createoreexcavation:drilling_machine"
-			}]
+			tasks: [
+				{
+					id: "27EA85318341928B"
+					type: "item"
+					item: "createoreexcavation:drilling_machine"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.4.title}"
+			title: "{ftbquests.chapter.tips.quests3.title}"
 			x: -4.5d
 			y: -13.5d
-			subtitle: "{tips.quest.4.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests3.subtitle}"
 			id: "0C07D49BEDE78634"
 			tasks: [
 				{
@@ -120,69 +126,79 @@
 		{
 			x: 13.0d
 			y: -8.0d
-			subtitle: "{tips.quest.5.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests4.subtitle}"
 			id: "3147CC1F634EF8E7"
-			tasks: [{
-				id: "00D0B84159CDC1CE"
-				type: "item"
-				item: "createchunkloading:chunk_loader"
-			}]
+			tasks: [
+				{
+					id: "00D0B84159CDC1CE"
+					type: "item"
+					item: "createchunkloading:chunk_loader"
+				}
+			]
 		}
 		{
 			x: -5.0d
 			y: -2.5d
 			id: "5296043AF72D58DD"
-			tasks: [{
-				id: "113D19B9D0E0D469"
-				type: "item"
-				item: "sophisticatedbackpacks:backpack"
-			}]
+			tasks: [
+				{
+					id: "113D19B9D0E0D469"
+					type: "item"
+					item: "sophisticatedbackpacks:backpack"
+				}
+			]
 		}
 		{
 			x: -5.0d
 			y: -1.5d
 			id: "7CE214F701140C6B"
-			tasks: [{
-				id: "4E581D58C0A5B113"
-				type: "item"
-				item: {
-					id: "naturescompass:naturescompass"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "4E581D58C0A5B113"
+					type: "item"
+					item: {
+						id: "naturescompass:naturescompass"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+			]
 		}
 		{
 			x: -5.5d
 			y: -14.0d
-			subtitle: "{tips.quest.8.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests7.subtitle}"
 			id: "39417A51292D3544"
-			tasks: [{
-				id: "004F74707B04D4E7"
-				type: "item"
-				item: {
-					id: "explorerscompass:explorerscompass"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "004F74707B04D4E7"
+					type: "item"
+					item: {
+						id: "explorerscompass:explorerscompass"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+			]
 		}
 		{
 			x: -6.0d
 			y: -3.0d
-			subtitle: "{tips.quest.9.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests8.subtitle}"
 			id: "00A12D9476F67645"
-			tasks: [{
-				id: "65BF0B4D1A86B085"
-				type: "item"
-				item: "minecraft:saddle"
-			}]
+			tasks: [
+				{
+					id: "65BF0B4D1A86B085"
+					type: "item"
+					item: "minecraft:saddle"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.10.title}"
+			title: "{ftbquests.chapter.tips.quests9.title}"
 			x: 12.0d
 			y: -7.0d
-			subtitle: "{tips.quest.10.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests9.subtitle}"
 			id: "6BE95A5BCF9527ED"
 			tasks: [
 				{
@@ -198,33 +214,37 @@
 			]
 		}
 		{
-			title: "{tips.quest.11.title}"
+			title: "{ftbquests.chapter.tips.quests10.title}"
 			x: 13.0d
 			y: -7.0d
-			subtitle: "{tips.quest.11.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests10.subtitle}"
 			id: "520888735E13CA2E"
-			tasks: [{
-				id: "00B80DE0D3B744F1"
-				type: "item"
-				item: "create:veridium"
-			}]
+			tasks: [
+				{
+					id: "00B80DE0D3B744F1"
+					type: "item"
+					item: "create:veridium"
+				}
+			]
 		}
 		{
 			x: -6.5d
 			y: -12.0d
-			subtitle: "{tips.quest.12.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests11.subtitle}"
 			id: "52EE3B7F60A5C0F4"
-			tasks: [{
-				id: "0D57135F3938BE15"
-				type: "item"
-				item: "kubejs:runic_tablet"
-			}]
+			tasks: [
+				{
+					id: "0D57135F3938BE15"
+					type: "item"
+					item: "kubejs:runic_tablet"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.13.title}"
+			title: "{ftbquests.chapter.tips.quests12.title}"
 			x: -6.5d
 			y: -13.0d
-			subtitle: "{tips.quest.13.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests12.subtitle}"
 			id: "45D36D1DEB856A0F"
 			tasks: [
 				{
@@ -235,7 +255,7 @@
 				{
 					id: "2E5246C07F3C63B7"
 					type: "item"
-					title: "Any #functionalstorage:drawer"
+					title: "{ftbquests.chapter.tips.quests12.tasks1.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -265,21 +285,23 @@
 			]
 		}
 		{
-			title: "{tips.quest.14.title}"
+			title: "{ftbquests.chapter.tips.quests13.title}"
 			x: -7.5d
 			y: -13.5d
-			subtitle: "{tips.quest.14.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests13.subtitle}"
 			id: "392207368024751B"
-			tasks: [{
-				id: "0558024E34F02416"
-				type: "item"
-				item: "create:weighted_ejector"
-			}]
+			tasks: [
+				{
+					id: "0558024E34F02416"
+					type: "item"
+					item: "create:weighted_ejector"
+				}
+			]
 		}
 		{
 			x: -6.0d
 			y: 0.0d
-			subtitle: "{tips.quest.15.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests14.subtitle}"
 			id: "39BEA048AB996A02"
 			tasks: [
 				{
@@ -303,42 +325,48 @@
 		{
 			x: 11.0d
 			y: -8.0d
-			subtitle: "{tips.quest.16.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests15.subtitle}"
 			id: "071AE83CC302169D"
-			tasks: [{
-				id: "3A1D25CC549EE8DE"
-				type: "item"
-				item: {
-					id: "forbidden_arcanus:eternal_stella"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "3A1D25CC549EE8DE"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:eternal_stella"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+			]
 		}
 		{
-			title: "{tips.quest.17.title}"
+			title: "{ftbquests.chapter.tips.quests16.title}"
 			x: -6.0d
 			y: -1.0d
 			id: "1F8010E246DBE7D2"
-			tasks: [{
-				id: "7322A96D72857116"
-				type: "item"
-				item: {
-					id: "minecraft:enchanted_book"
-					Count: 1b
-					tag: {
-						StoredEnchantments: [{
-							lvl: 1s
-							id: "veinmining:vein_mining"
-						}]
+			tasks: [
+				{
+					id: "7322A96D72857116"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [
+								{
+									lvl: 1s
+									id: "veinmining:vein_mining"
+								}
+							]
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: -4.5d
 			y: -12.5d
-			subtitle: "{tips.quest.18.title}"
+			subtitle: "{ftbquests.chapter.tips.quests17.subtitle}"
 			id: "0403135BEBFF8693"
 			tasks: [
 				{
@@ -357,32 +385,36 @@
 			x: -5.0d
 			y: -3.5d
 			id: "514DF30DE10444A1"
-			tasks: [{
-				id: "4FD18470D3FC9859"
-				type: "item"
-				item: "magicfeather:magicfeather"
-			}]
+			tasks: [
+				{
+					id: "4FD18470D3FC9859"
+					type: "item"
+					item: "magicfeather:magicfeather"
+				}
+			]
 		}
 		{
 			x: -7.0d
 			y: -1.5d
 			id: "2871D10E1E289B18"
-			tasks: [{
-				id: "062BA226461B1EB3"
-				type: "item"
-				item: {
-					id: "reliquary:alkahestry_tome"
-					Count: 1b
-					tag: {
-						Damage: 1001
+			tasks: [
+				{
+					id: "062BA226461B1EB3"
+					type: "item"
+					item: {
+						id: "reliquary:alkahestry_tome"
+						Count: 1b
+						tag: {
+							Damage: 1001
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: -6.0d
 			y: -2.0d
-			subtitle: "{tips.quest.21.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests20.subtitle}"
 			id: "10F2426EC2ABA865"
 			tasks: [
 				{
@@ -402,10 +434,10 @@
 			]
 		}
 		{
-			title: "{tips.quest.22.title}"
+			title: "{ftbquests.chapter.tips.quests21.title}"
 			x: -5.5d
 			y: -11.0d
-			subtitle: "{tips.quest.22.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests21.subtitle}"
 			id: "5CFBF9DB3C810E70"
 			tasks: [
 				{
@@ -424,14 +456,16 @@
 			x: -7.0d
 			y: -2.5d
 			id: "52E70CAD0E90E8E3"
-			tasks: [{
-				id: "07618CC7C276AE29"
-				type: "item"
-				item: "pneumaticcraft:amadron_tablet"
-			}]
+			tasks: [
+				{
+					id: "07618CC7C276AE29"
+					type: "item"
+					item: "pneumaticcraft:amadron_tablet"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.24.title}"
+			title: "{ftbquests.chapter.tips.quests23.title}"
 			x: -7.0d
 			y: -3.5d
 			id: "640704ED253016CA"
@@ -449,10 +483,10 @@
 			]
 		}
 		{
-			title: "{tips.quest.25.title}"
+			title: "{ftbquests.chapter.tips.quests24.title}"
 			x: -6.5d
 			y: -14.0d
-			subtitle: "{tips.quest.25.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests24.subtitle}"
 			id: "39726A3AB587CB01"
 			tasks: [
 				{
@@ -463,7 +497,7 @@
 				{
 					id: "533B36B9933BDE54"
 					type: "item"
-					title: "Any #minecraft:leaves"
+					title: "{ftbquests.chapter.tips.quests24.tasks1.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -477,50 +511,58 @@
 		{
 			x: 11.0d
 			y: -6.0d
-			subtitle: "{tips.quest.26.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests25.subtitle}"
 			id: "3D7B34D45116567D"
-			tasks: [{
-				id: "600FE95A2CB0913B"
-				type: "item"
-				item: "minecraft:wet_sponge"
-			}]
+			tasks: [
+				{
+					id: "600FE95A2CB0913B"
+					type: "item"
+					item: "minecraft:wet_sponge"
+				}
+			]
 		}
 		{
 			x: -6.0d
 			y: -4.0d
 			id: "5E6870E5C7A79754"
-			tasks: [{
-				id: "13AEBDA3DAE701F1"
-				type: "item"
-				item: "create:wand_of_symmetry"
-			}]
+			tasks: [
+				{
+					id: "13AEBDA3DAE701F1"
+					type: "item"
+					item: "create:wand_of_symmetry"
+				}
+			]
 		}
 		{
 			x: -5.5d
 			y: -13.0d
-			subtitle: "{tips.quest.28.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests27.subtitle}"
 			id: "433CCF86EBF39A8E"
-			tasks: [{
-				id: "3D478FAFAF8DACFC"
-				type: "item"
-				item: "kubejs:alloy_radar"
-			}]
+			tasks: [
+				{
+					id: "3D478FAFAF8DACFC"
+					type: "item"
+					item: "kubejs:alloy_radar"
+				}
+			]
 		}
 		{
 			x: 11.0d
 			y: -7.0d
-			subtitle: "{tips.quest.29.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests28.subtitle}"
 			id: "6425BC0E551581F5"
-			tasks: [{
-				id: "4C2519536CDF599D"
-				type: "item"
-				item: "minecraft:netherrack"
-			}]
+			tasks: [
+				{
+					id: "4C2519536CDF599D"
+					type: "item"
+					item: "minecraft:netherrack"
+				}
+			]
 		}
 		{
 			x: -7.5d
 			y: -12.5d
-			subtitle: "{tips.quest.30.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests29.subtitle}"
 			id: "223B1CB805849D44"
 			tasks: [
 				{
@@ -536,10 +578,10 @@
 			]
 		}
 		{
-			title: "{tips.quest.31.title}"
+			title: "{ftbquests.chapter.tips.quests30.title}"
 			x: 10.0d
 			y: -7.0d
-			subtitle: "{tips.quest.31.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests30.subtitle}"
 			id: "2A80651B5135AB01"
 			tasks: [
 				{
@@ -553,103 +595,121 @@
 					item: "create:iron_sheet"
 				}
 			]
-			rewards: [{
-				id: "7135331C7BA72B0F"
-				type: "item"
-				item: "create:iron_sheet"
-				count: 2
-			}]
+			rewards: [
+				{
+					id: "7135331C7BA72B0F"
+					type: "item"
+					item: "create:iron_sheet"
+					count: 2
+				}
+			]
 		}
 		{
 			icon: "kubejs:fragment_of_patience"
 			x: 12.0d
 			y: -8.0d
 			id: "4C457CC907F4CAA5"
-			tasks: [{
-				id: "6F46BA932D39FE72"
-				type: "checkmark"
-				title: "{tips.quest.32.task.1.title}"
-			}]
-			rewards: [{
-				id: "2EC22C98DF0C43CE"
-				type: "item"
-				item: "kubejs:fragment_of_patience"
-			}]
+			tasks: [
+				{
+					id: "6F46BA932D39FE72"
+					type: "checkmark"
+					title: "{ftbquests.chapter.tips.quests31.tasks0.title}"
+				}
+			]
+			rewards: [
+				{
+					id: "2EC22C98DF0C43CE"
+					type: "item"
+					item: "kubejs:fragment_of_patience"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.33.title}"
+			title: "{ftbquests.chapter.tips.quests32.title}"
 			x: -6.0d
 			y: -16.0d
 			id: "280B58649F0CB8C9"
-			tasks: [{
-				id: "468BB1C3DA5FEB88"
-				type: "item"
-				item: "davebuildingmod:alarm_sign"
-			}]
+			tasks: [
+				{
+					id: "468BB1C3DA5FEB88"
+					type: "item"
+					item: "davebuildingmod:alarm_sign"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.34.title}"
+			title: "{ftbquests.chapter.tips.quests33.title}"
 			x: 11.5d
 			y: -9.0d
 			id: "654993F745FC29F0"
-			tasks: [{
-				id: "638064ADFA699D9E"
-				type: "item"
-				item: "davebuildingmod:alarm_sign"
-			}]
+			tasks: [
+				{
+					id: "638064ADFA699D9E"
+					type: "item"
+					item: "davebuildingmod:alarm_sign"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.35.title}"
+			title: "{ftbquests.chapter.tips.quests34.title}"
 			x: -6.0d
 			y: -5.0d
 			id: "3799508D7DECC323"
-			tasks: [{
-				id: "5FAD817B1557E963"
-				type: "item"
-				item: "davebuildingmod:alarm_sign"
-			}]
+			tasks: [
+				{
+					id: "5FAD817B1557E963"
+					type: "item"
+					item: "davebuildingmod:alarm_sign"
+				}
+			]
 		}
 		{
 			x: 10.0d
 			y: -8.0d
-			subtitle: "{tips.quest.36.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests35.subtitle}"
 			id: "686971D4F5FC320E"
-			tasks: [{
-				id: "0D6C3F32723A2F16"
-				type: "item"
-				item: "thermal:device_rock_gen"
-			}]
+			tasks: [
+				{
+					id: "0D6C3F32723A2F16"
+					type: "item"
+					item: "thermal:device_rock_gen"
+				}
+			]
 		}
 		{
-			title: "{tips.quest.37.title}"
+			title: "{ftbquests.chapter.tips.quests36.title}"
 			icon: "quark:warped_chest"
 			x: -6.5d
 			y: -15.0d
-			subtitle: "{tips.quest.37.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests36.subtitle}"
 			id: "1BDC8F965F8B7DA7"
-			tasks: [{
-				id: "0A0883A23A9D8436"
-				type: "checkmark"
-				title: "{tips.quest.37.task.1.title}"
-			}]
+			tasks: [
+				{
+					id: "0A0883A23A9D8436"
+					type: "checkmark"
+					title: "{ftbquests.chapter.tips.quests36.tasks0.title}"
+				}
+			]
 		}
 		{
 			x: 12.0d
 			y: -6.0d
-			subtitle: "{tips.quest.38.subtitle}"
+			subtitle: "{ftbquests.chapter.tips.quests37.subtitle}"
 			id: "41474C57E044994B"
-			tasks: [{
-				id: "63EC1E041F8BFE36"
-				type: "item"
-				item: "compressedcreativity:heater"
-			}]
+			tasks: [
+				{
+					id: "63EC1E041F8BFE36"
+					type: "item"
+					item: "compressedcreativity:heater"
+				}
+			]
 		}
 		{
 			icon: "create:item_vault"
 			x: -5.5d
 			y: -15.0d
-			subtitle: "Don't know how to fix something? Call it a feature."
-			description: ["Item Vaults are a great way to store the bulk of your Items. \\nYou can even interact with their contents manually through a Tinkers crafting station."]
+			subtitle: "{ftbquests.chapter.tips.quests38.subtitle}"
+			description: ["{ftbquests.chapter.tips.quests38.description}"]
 			id: "48D73F3A6C8C0203"
 			tasks: [
 				{
@@ -660,7 +720,7 @@
 				{
 					id: "6D69399EBF8FBC41"
 					type: "item"
-					title: "Any Crafting Station"
+					title: "{ftbquests.chapter.tips.quests38.tasks1.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
